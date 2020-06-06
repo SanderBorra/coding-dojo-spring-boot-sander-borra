@@ -59,7 +59,7 @@ public class WeatherService {
     private WeatherEntity saveWeather(final WeatherEntity weatherEntity) {
         try {
             return weatherRepository.save(weatherEntity);
-        } catch (Throwable e) {
+        } catch (final RuntimeException e) {
             log.debug("FAIL", e);
             throw new SystemErrorException(e);
         }

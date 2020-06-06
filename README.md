@@ -1,22 +1,26 @@
-Spring Boot Coding Dojo
+Spring Boot Coding Dojo adaptation by Sander Borra
 ---
 
-Welcome to the Spring Boot Coding Dojo!
+Welcome to the Spring Boot Coding Dojo! (by Sander Borra)
+This excercise is based on the code by Marcos Barbero (https://github.com/marcosbarbero/coding-dojo-spring-boot)
 
 ### Introduction
 
-This is a simple application that requests its data from [OpenWeather](https://openweathermap.org/) and stores the result in a database. The current implementation has quite a few problems making it a non-production ready product.
+This project implements a Rest API that will store current weather information for a given city in a database and also will return the data to the requester.
+The name of the city cannot be empty and must match one of the names of a city the OpenWeather API is familiar with otherwise an error will be returned.
 
 ### The task
 
-As the new engineer leading this project, your first task is to make it production-grade, feel free to refactor any piece
-necessary to achieve the goal.
+The original code was intentionally not production ready, an attempt was made to fix that
 
-### How to deliver the code
+## Usage
+To run the application, configuration must be entered
+Configuration can be found in application.yaml and can be overriden by a platform specfic configuration
+I.e. for production create a application.prod.yaml and specify an environment for startup
 
-Please send an email containing your solution with a link to a public repository.
+### Code on GitHub
 
->**DO NOT create a Pull Request with your solution** 
+See: https://github.com/SanderBorra/coding-dojo-spring-boot-sander-borra
 
 ### Footnote
 It's possible to generate the API key going to the [OpenWeather Sign up](https://openweathermap.org/appid) page.
