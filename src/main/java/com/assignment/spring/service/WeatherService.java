@@ -4,6 +4,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
@@ -19,6 +20,7 @@ import com.assignment.spring.resource.WeatherRepository;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@Service
 public class WeatherService {
 
     private final RestTemplate restTemplate;

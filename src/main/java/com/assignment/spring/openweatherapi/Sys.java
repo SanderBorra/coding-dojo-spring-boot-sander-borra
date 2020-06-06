@@ -10,8 +10,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -24,21 +26,24 @@ import lombok.ToString;
         "sunset"
 })
 
-@ToString
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@ToString
 public class Sys {
 
-    @Getter
+    
     private Integer type;
-    @Getter
+    
     private Integer id;
-    @Getter
+    
     private Double message;
-    @Getter
+    
     private String country;
-    @Getter
+    
     private Integer sunrise;
-    @Getter
+    
     private Integer sunset;
     
     @JsonIgnore

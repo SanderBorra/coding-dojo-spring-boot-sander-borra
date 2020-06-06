@@ -10,24 +10,31 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "id",
-    "main",
-    "description",
-    "icon"
+        "id",
+        "main",
+        "description",
+        "icon"
 })
 
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
 @ToString
 public class Weather {
-    @Getter
+
     private Integer id;
-    @Getter
+
     private String main;
-    @Getter
+
     private String description;
     private String icon;
     @JsonIgnore

@@ -22,12 +22,12 @@ public class ApplicationConfiguration {
         return new RestTemplate();
     }
 
-    @Bean
+    @Bean(name = "weatherApiUrl")
     public String getWeatherApiUrl() {
         return weatherApiUrl;
     }
     
-    @Bean
+    @Bean(name = "appId")
     public String getAppId() {
         return appId;
     }
