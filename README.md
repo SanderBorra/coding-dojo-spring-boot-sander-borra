@@ -18,6 +18,10 @@ To run the application, configuration must be entered
 Configuration can be found in application.yaml and can be overriden by a platform specfic configuration
 I.e. for production create a application.prod.yaml and specify an environment variable 'Env=prod' for startup
 
+Use Maven to start the application: mvn spring-boot:run
+or without Maven:
+java -jar target/coding-dojo-spring-boot-0.0.1-SNAPSHOT.jar
+
 ### Code on GitHub
 
 See: https://github.com/SanderBorra/coding-dojo-spring-boot-sander-borra
