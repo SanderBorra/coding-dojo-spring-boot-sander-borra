@@ -16,7 +16,7 @@ The original code was intentionally not production ready, an attempt was made to
 ## Usage
 To run the application, configuration must be entered
 Configuration can be found in application.yaml and can be overriden by a platform specfic configuration
-I.e. for production create a application.prod.yaml and specify an environment for startup
+I.e. for production create a application.prod.yaml and specify an environment variable 'Env=prod' for startup
 
 ### Code on GitHub
 
